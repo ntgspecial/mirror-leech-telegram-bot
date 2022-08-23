@@ -220,7 +220,7 @@ class YoutubeDLHelper:
     def __set_args(self, args):
         args = args.split('|')
         for arg in args:
-            xy = arg.split(':', 1)
+            xy = arg.split(';', 1)
             karg = xy[0].strip()
             varg = xy[1].strip()
             if varg.startswith('^'):
